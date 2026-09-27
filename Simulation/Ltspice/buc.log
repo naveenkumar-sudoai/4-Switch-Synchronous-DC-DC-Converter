@@ -1,0 +1,25 @@
+LTspice 26.0.2 for Windows
+Circuit: Z:\home\naveenkumar\PROJECTS\4-Switch-Synchronous-DC-DC-Converter\Simulation\Ltspice\buc.net
+Start Time: Sat Aug 22 15:22:08 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+WARNING: Node sw1 is floating.
+WARNING: Node nc_05 is floating.
+WARNING: Node nc_06 is floating.
+WARNING: Node nc_08 is floating.
+WARNING: Node nc_09 is floating.
+WARNING: Node out is floating.
+WARNING: Node nc_15 is floating.
+WARNING: Node nc_16 is floating.
+WARNING: Node nc_18 is floating.
+WARNING: Node nc_19 is floating.
+
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.811 seconds.
+
+Files loaded:
+Z:\home\naveenkumar\PROJECTS\4-Switch-Synchronous-DC-DC-Converter\Simulation\Ltspice\buc.net
+

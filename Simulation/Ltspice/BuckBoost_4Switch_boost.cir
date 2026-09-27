@@ -1,0 +1,44 @@
+* 4-Switch Synchronous Buck-Boost DC-DC Converter
+* Boost mode test: Vin = 9 V -> Vout = 12 V, Iout = 5 A (Rload = 2.4 ohm)
+* fsw = 300 kHz (T = 3.3333 us), L = 22 uH
+*
+* Topology (4-switch H-bridge):
+*   Q1 = buck high-side   (always ON  in boost mode)
+*   Q2 = buck low-side    (always OFF in boost mode)
+*   Q3 = boost high-side  (synchronous rectifier, complementary PWM)
+*   Q4 = boost low-side   (active switch, PWM, D = 0.25)
+
+.model SwitchModel SW(Ron=1m Roff=10Meg Vt=2.5)
+
+* ---- Input ----
+VIN  IN 0 9
+CIN  IN N1 38u
+RCIN N1 0 2m
+
+* ---- Buck leg (input side) ----
+S1 IN SW1 G1 0 SwitchModel     ; Q1 buck high-side (ON)
+VG1 G1 0 10
+S2 SW1 0 G2 0 SwitchModel      ; Q2 buck low-side (OFF)
+VG2 G2 0 0
+
+* ---- Inductor, DCR, and sense ----
+L1  SW1 N2 22u
+RDCR N2 SENSE 10m
+RSENSE SENSE SW2 10m
+
+* ---- Boost leg (output side) ----
+S3 SW2 OUT G3 0 SwitchModel    ; Q3 boost high-side (sync rect)
+S4 SW2 0 G4 0 SwitchModel      ; Q4 boost low-side (active)
+
+* ---- Output ----
+COUT OUT N3 60.7u
+RCOUT N3 0 5m
+RLOAD OUT 0 2.4
+
+* ---- Gate drives (300 kHz, 50 ns dead time) ----
+* Q4: ON 0..833.3ns (D=0.25); Q3: ON 883.3ns..3.2833us
+VG4 G4 0 PULSE(0 10 0 1n 1n 833.3n 3.3333u)
+VG3 G3 0 PULSE(0 10 883.3n 1n 1n 2.4u 3.3333u)
+
+.tran 0 5m 0 10n
+.end
