@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Four_Switch_buck_boost.kicad_pro",
+    "filename": "Solar_Mppt.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -411,18 +411,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Four_Switch_buck_boost.kicad_sch",
-        "name": "Root",
-        "uuid": "c7b8504e-f9c7-4ff1-8cae-9ccbedfcfbe6"
+        "filename": "Solar_Mppt.kicad_sch",
+        "name": "Solar_Mppt",
+        "uuid": "ce3fe1f4-e7ad-43e5-8baf-af817f0d807b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C1-2,#PWR1,D1-3,SC1,L1,Q1-8,R1-8,F1,Q1.a1,Q2.a1,Q3.a1,Q4.a1",
     "variants": []
   },
   "sheets": [
     [
-      "c7b8504e-f9c7-4ff1-8cae-9ccbedfcfbe6",
-      "Root"
+      "ce3fe1f4-e7ad-43e5-8baf-af817f0d807b",
+      "Solar_Mppt"
     ]
   ],
   "text_variables": {},
