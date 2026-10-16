@@ -5,6 +5,184 @@
 	(uuid "c7b8504e-f9c7-4ff1-8cae-9ccbedfcfbe6")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Driver_FET:IR2110"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -664,8 +842,8 @@
 		)
 	)
 	(rectangle
-		(start 13.97 90.17)
-		(end 158.75 194.31)
+		(start -182.88 63.5)
+		(end -38.1 167.64)
 		(stroke
 			(width 0)
 			(type default)
@@ -677,7 +855,7 @@
 	)
 	(text "Gate Driver"
 		(exclude_from_sim no)
-		(at 24.892 82.296 0)
+		(at -171.958 55.626 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -692,7 +870,7 @@
 		(uuid "912461c2-24cf-4e5d-9bec-b90c6997a05d")
 	)
 	(image
-		(at 49.53 106.68)
+		(at -147.32 80.01)
 		(uuid "e77cc65f-78da-41ac-b93a-6b25d252f62d")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAxcAAAFSCAIAAAAPSLWdAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOzdeSBU3/84/jv2fSm77NpE9pIUolBoe5VCRYRKpZTSJlq0qLTvoUIR7YtKJNIiS6IFWUJk3/eZ"
@@ -1436,7 +1614,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 185.42 93.98 0)
+		(at 124.46 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1447,7 +1625,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d26cd3f-ff8b-4e47-a35d-7031ee78c332")
 		(property "Reference" "Q5"
-			(at 191.77 92.7099 0)
+			(at 130.81 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1458,7 +1636,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS_GDS"
-			(at 191.77 95.2499 0)
+			(at 130.81 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1469,7 +1647,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 190.5 91.44 0)
+			(at 129.54 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1480,7 +1658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 93.98 0)
+			(at 124.46 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1491,7 +1669,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 185.42 93.98 0)
+			(at 124.46 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1521,7 +1699,7 @@
 	)
 	(symbol
 		(lib_id "Driver_FET:IR2110")
-		(at 120.65 138.43 90)
+		(at -76.2 111.76 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1532,7 +1710,7 @@
 		(fields_autoplaced yes)
 		(uuid "23f96b60-4cc8-4662-b970-fc82222a7c48")
 		(property "Reference" "U1"
-			(at 105.41 132.9846 90)
+			(at -91.44 106.3146 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1542,7 +1720,7 @@
 			)
 		)
 		(property "Value" "IR2110"
-			(at 105.41 135.5246 90)
+			(at -91.44 108.8546 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1552,7 +1730,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 120.65 138.43 0)
+			(at -76.2 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1564,7 +1742,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e"
-			(at 120.65 138.43 0)
+			(at -76.2 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1575,7 +1753,7 @@
 			)
 		)
 		(property "Description" "High and Low Side Driver, 500V, 2.0/2.0A, PDIP-14"
-			(at 120.65 138.43 0)
+			(at -76.2 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1638,7 +1816,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 185.42 107.95 0)
+		(at 124.46 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1649,7 +1827,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d26254f-6f78-46be-b367-380f32c52fb6")
 		(property "Reference" "Q6"
-			(at 191.77 106.6799 0)
+			(at 130.81 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1660,7 +1838,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS_GDS"
-			(at 191.77 109.2199 0)
+			(at 130.81 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1671,7 +1849,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 190.5 105.41 0)
+			(at 129.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1682,7 +1860,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 107.95 0)
+			(at 124.46 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1693,7 +1871,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 185.42 107.95 0)
+			(at 124.46 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1723,7 +1901,7 @@
 	)
 	(symbol
 		(lib_id "Driver_FET:IR2110")
-		(at 53.34 168.91 90)
+		(at -143.51 142.24 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1734,7 +1912,7 @@
 		(fields_autoplaced yes)
 		(uuid "81f52658-9409-4d0a-b342-c31aee3d2c5a")
 		(property "Reference" "U2"
-			(at 38.1 163.4646 90)
+			(at -158.75 136.7946 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1744,7 +1922,7 @@
 			)
 		)
 		(property "Value" "IR2110"
-			(at 38.1 166.0046 90)
+			(at -158.75 139.3346 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1754,7 +1932,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 53.34 168.91 0)
+			(at -143.51 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1766,7 +1944,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e"
-			(at 53.34 168.91 0)
+			(at -143.51 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1777,7 +1955,7 @@
 			)
 		)
 		(property "Description" "High and Low Side Driver, 500V, 2.0/2.0A, PDIP-14"
-			(at 53.34 168.91 0)
+			(at -143.51 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1839,8 +2017,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 214.63 107.95 0)
+		(lib_id "Device:L")
+		(at 152.4 88.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1849,31 +2027,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a5ec2df3-21fc-413a-a679-19424f9bcabe")
-		(property "Reference" "Q8"
-			(at 220.98 106.6799 0)
+		(uuid "89b55d83-f46e-45df-b2b6-5b46e84faab7")
+		(property "Reference" "L1"
+			(at 152.4 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GDS"
-			(at 220.98 109.2199 0)
+		(property "Value" "L"
+			(at 152.4 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 219.71 105.41 0)
+		(property "Footprint" ""
+			(at 152.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1884,7 +2060,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 107.95 0)
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c594bff3-1b13-4b87-a885-8355f65b8ff2")
+		)
+		(pin "1"
+			(uuid "4ad378fd-7b17-4548-9be5-768a7405eb70")
+		)
+		(instances
+			(project "Four_Switch_buck_boost"
+				(path "/c7b8504e-f9c7-4ff1-8cae-9ccbedfcfbe6"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(at 175.26 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5ec2df3-21fc-413a-a679-19424f9bcabe")
+		(property "Reference" "Q8"
+			(at 181.61 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS_GDS"
+			(at 181.61 110.4899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 180.34 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1895,7 +2153,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 214.63 107.95 0)
+			(at 175.26 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1925,7 +2183,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 214.63 93.98 0)
+		(at 175.26 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1936,7 +2194,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7e03e71-bf84-4f2e-a497-4ea082db247e")
 		(property "Reference" "Q7"
-			(at 220.98 92.7099 0)
+			(at 181.61 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1947,7 +2205,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS_GDS"
-			(at 220.98 95.2499 0)
+			(at 181.61 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1958,7 +2216,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 219.71 91.44 0)
+			(at 180.34 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1969,7 +2227,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 93.98 0)
+			(at 175.26 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1980,7 +2238,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 214.63 93.98 0)
+			(at 175.26 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
